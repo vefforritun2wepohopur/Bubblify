@@ -7,6 +7,7 @@ import About from './About/About';
 import BubbleID from './BubbleID/BubbleID';
 import Bundles from './Bundles/Bundles';
 import Cart from './Cart/Cart';
+import Home from './Home/Home';
 import Products from './Products/Products';
 
 
@@ -17,8 +18,8 @@ const App = () => {
             <NavigationBar />
             <div className="container">
                         <Switch>
-                            <Route exact path="/" component={ Products } />
-                            <Route path="/products" render={ () => <Redirect to="/" /> } />
+                            <Route exact path="/" component={ Home } />
+                            <Route path="/home" render={ () => <Redirect to="/" /> } />
                             <Route exact path="/products" component={ Products } />
                             <Route exact path="/bundles" component={ Bundles } />
                             <Route exact path="/about" component={ About } />
