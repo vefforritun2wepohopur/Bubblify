@@ -1,16 +1,19 @@
 import React from 'react';
+import BundleItem from '../BundleItem/BundleItem';
+import BundleService from '../../services/bundleService';
 
-const Bundles = () => {
-
-    return (
-
-        <div>
-            <h1>Bundles</h1>
-            <p>I am a Bundle</p>
-        </div>
-
-    )
-
-};
+class Bundles extends React.Component {
+    componentDidMount() {
+        this.setState({ bundles: BundleService.getBundles() });
+    }
+    constructor() {
+        super();
+        this.state = { bundles: [] };
+    }
+    render() {
+        const { bundles } = this.state;
+        return bundles.map(g => <BundleItem key={g.place} {...g} />)
+    }
+}
 
 export default Bundles;
