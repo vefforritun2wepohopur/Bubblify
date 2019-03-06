@@ -6,11 +6,11 @@ const NavLinks = () => {
      
         <ul className="navbar-nav mr-auto">
             <li className="navbar navbar-light bg-light">
-            <NavLink exact to="/" className="image-logo">
+            <NavLink to="/" className="image-logo">
                 <img src="resources\img\logo.png" width="70" height="70" alt="lol"/></NavLink>
             </li>
             <li className="nav-item">
-                <NavLink exact to="/products" className="nav-link">Products</NavLink>
+                <NavLink to="/products" className="nav-link">Products</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink to="/bundles" className="nav-link">Bundles</NavLink>
