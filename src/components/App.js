@@ -17,8 +17,8 @@ const App = () => {
             <NavigationBar />
             <div className="container">
                         <Switch>
-                            <Route exact path="/" component={ Home } />
-                            <Route path="/home" render={ () => <Redirect to="/" /> } />
+                            <Route exact path="/" component={ Products } />
+                            <Route path="/products" render={ () => <Redirect to="/" /> } />
                             <Route exact path="/products" component={ Products } />
                             <Route exact path="/bundles" component={ Bundles } />
                             <Route exact path="/about" component={ About } />
