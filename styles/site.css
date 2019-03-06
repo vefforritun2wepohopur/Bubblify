@@ -1,1 +1,11 @@
 /* You can add styles here */
+
+.about-us {
+  background-color: antiquewhite;
+}
+.about-us > h1 {
+  text-align: center;
+}
+.red-text {
+  color: red;
+}
