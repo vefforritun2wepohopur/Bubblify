@@ -25,6 +25,7 @@ class BubbleID extends React.Component  {
                     <div className="card-text">
                         <img src={this.state.bubbleItem.url} style={{ width: 200 }} />
                         <p className="card-text">{this.state.bubbleItem.longDescription}</p>
+                        <p className="card-text">{this.state.bubbleItem.price}</p>
                     </div>
         		</div>
         	</div>
