@@ -1,0 +1,24 @@
+{
+	"bundles": [{
+			"id": 1,
+			"imgPath": "resources\img\bronze-bundle.png",
+			"name": "Bronze Bundle",
+      "shortDescription": "Includes 1 pack of 500ml Lemon bubbles, Strawberry bubbles and Apple bubbles. Save 16,7%!",
+      "price":"500"
+		},
+		{
+			"id": 2,
+      "imgPath": "resources\img\silver-bundle.png",			
+      "name": "Silver Bundle",
+      "shortDescription": "Includes 3 packs of 500ml Lemon bubbles, Strawberry bubbles and Apple bubbles. Save 27,8%!",
+      "price":"1300"
+		},
+		{
+			"id": 3,
+      "imgPath": "resources\img\gold-bundle.png",
+      "name": "Gold Bundle",
+      "shortDescription": "Includes 5 packs of 500ml Lemon bubbles, Strawberry bubbles and Apple bubbles. Save 33,3%! WOW!",
+      "price":"2000"
+		}
+	]
+}
