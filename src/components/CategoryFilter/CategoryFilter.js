@@ -3,20 +3,20 @@ const CategoryFilter = (props) => {
     return (
         <div>
             <input
-                type="lemon"
+                type="radio"
                 name="category"
                 id="lemon"
                 value="lemon"
                 onChange={props.onChange} />
-            <label htmlFor="lemon">lemon</label>
+            <label class="categ-check-label" htmlFor="lemon">Lemon</label>
 
             <input
-                type="strawberry"
+                type="radio"
                 name="category"
                 id="strawberry"
                 value="strawberry"
                 onChange={props.onChange} />
-            <label htmlFor="strawberry">strawberry</label>
+            <label htmlFor="strawberry">Strawberry</label>
 
             <input
                 type="radio"
@@ -24,7 +24,7 @@ const CategoryFilter = (props) => {
                 id="apple"
                 value="apple"
                 onChange={props.onChange} />
-            <label htmlFor="apple">Technology</label>
+            <label htmlFor="apple">Apple</label>
         </div>
     );
 };
