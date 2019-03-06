@@ -10,7 +10,7 @@ const NavLinks = () => {
                 <img src="resources\img\logo.png" width="70" height="70" alt="lol"/></NavLink>
             </li>
             <li className="nav-item">
-                <NavLink to="/products" className="nav-link">Products</NavLink>
+                <NavLink exact to="/products" className="nav-link">Products</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink to="/bundles" className="nav-link">Bundles</NavLink>
