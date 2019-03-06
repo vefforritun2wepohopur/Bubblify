@@ -7,7 +7,7 @@ const BundleItem = ({ id, imgPath, name, shortDescription, price }) => {
             <div className="card-body">
                 <h4 className="card-title">{ name }</h4>
                 <div className="card-text">
-                    <img src={imgPath} alt="bundle" height="60" width="60"/>
+                    <img src={imgPath} alt="bundle" height="200" width="200"/>
                     <p>{ shortDescription }</p>
                     <p>{ price }</p>
                 </div>
