@@ -18,7 +18,8 @@ class Products extends React.Component  {
         this.state = {
             bubbles: [],
             search: '',
-            category: ''
+            category: '',
+            qty: 0
         };
     }
 
@@ -29,6 +30,11 @@ class Products extends React.Component  {
     onRadio(e) {
         var bubbles = getBubbles({ name: this.state.search, category: e.target.value });
         this.setState({ bubbles: bubbles, category: e.target.value });
+    }
+
+    onClick(e) {
+        var bubbles = getBubbles({ name: this.state.search, id: e.target.value });
+        this.setState({ bubbles: bubbles, qty: 1 });
     }
     render() {
         return (

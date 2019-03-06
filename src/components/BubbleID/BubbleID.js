@@ -13,9 +13,20 @@ class BubbleID extends React.Component  {
     constructor() {
         super();
         this.state = {
-            bubbleItem: {}
+            bubbleItem: {},
+            isAdded: false
+            
         };
+        this.add = this.add.bind(this);
     }
+
+    add() {
+        this.setState({
+          qty: this.state.qty + 1
+        });
+        this.props.handleTotal(this.props.price);
+      }
+
     render() {
         return (
             <div className="card border-dark mb-3">
@@ -26,6 +37,7 @@ class BubbleID extends React.Component  {
                         <img src={this.state.bubbleItem.url} style={{ width: 200 }} />
                         <p className="card-text">Description: {this.state.bubbleItem.longDescription}</p>
                         <p className="card-text">Price: {this.state.bubbleItem.price}</p>
+                        <button onClick={this.add}>Add to Cart</button>
                     </div>
         		</div>
         	</div>

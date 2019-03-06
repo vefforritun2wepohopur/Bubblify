@@ -1,6 +1,22 @@
 import React from 'react';
 
+
+
 const Cart = () => {
+
+    return (
+
+        <div>
+            <h1>Cart</h1>
+            <p>Shopping Cart </p>
+        </div>
+
+    )
+
+};
+
+/*
+class Cart extends Component{
 
     return (
 
@@ -12,5 +28,5 @@ const Cart = () => {
     )
 
 };
-
+*/
 export default Cart;
