@@ -17,17 +17,18 @@ class Products extends React.Component  {
         super();
         this.state = {
             bubbles: [],
+            search: '',
             category: ''
         };
     }
 
     onFilter(e) {
-        var bubbles = getbubbles({ name: e.target.value, category: this.state.category });
+        var bubbles = getBubbles({ name: e.target.value, category: this.state.category });
         this.setState({ bubbles: bubbles, search: e.target.value });
     }
     onRadio(e) {
-        var bubbles = getbubbles({ name: this.state.search, category: e.target.value });
-        this.setState({ nebubblesws: bubbles, category: e.target.value });
+        var bubbles = getBubbles({ name: this.state.search, category: e.target.value });
+        this.setState({ bubbles: bubbles, category: e.target.value });
     }
     render() {
         return (
