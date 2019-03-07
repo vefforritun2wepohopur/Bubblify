@@ -8,7 +8,7 @@
   text-align: center;
 }
 .small-text {
-  size: 6px;
+  font-size: 10px;
   font-style: italic;
 }
 .about-us > img {
@@ -40,3 +40,10 @@
   margin-right: auto;
   display:block;
 }
+/*
+.navlink {
+  margin-right: 20px;
+  color: #DF744A;
+  font-size: 36px;
+}
+*/
