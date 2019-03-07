@@ -1,11 +1,42 @@
 /* You can add styles here */
 
 .about-us {
-  background-color: antiquewhite;
+  background-color: #fedcd2;
+  color: #DF744A; 
 }
 .about-us > h1 {
   text-align: center;
 }
-.red-text {
-  color: red;
+.small-text {
+  size: 6px;
+  font-style: italic;
+}
+.about-us > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.navbar {
+  background-color: #FEDCD2;
+}
+/* virkar ekki */
+.nav-item{
+  color: #DF744A;
+}
+.home {
+  color: #DF744A;
+  background-color: #fedcd2;
+}
+.home > h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.home > h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.home > img {
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
 }
