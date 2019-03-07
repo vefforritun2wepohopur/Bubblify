@@ -1,5 +1,5 @@
 import { bubbles } from '../../resources/bubbles.json';
-import { bundles } from '../../resources/bundles.json';
+import { bundles } from '../../resources/bubbles.json';
 
 const getBubbles = (filter = { name: '', category: '' }) =>
     bubbles.filter(n =>

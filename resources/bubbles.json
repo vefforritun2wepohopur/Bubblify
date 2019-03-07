@@ -54,5 +54,27 @@
             "price":"300",
 			"category": "strawberry"
 		}
+	],
+	
+	"bundles": [ 
+			{
+					"id": 1,
+					"name": "Dark Christmas!",
+					"items": [ 5, 6 ],
+					"imgPath": "resources/img/frozen-bubble.jpg"
+			},
+			{
+					"id": 2,
+					"name": "Triple Bubble!",
+					"items": [ 2, 3, 4 ],
+					"imgPath": "resources/img/tripple-bubble.jpg"
+			},
+			{
+					"id": 3,
+					"name": "Plain wild!",
+					"items": [ 1, 2 ]
+					,"imgPath": "resources/img/wild-bubble.jpg"
+			}
+			
 	]
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BundleItem = ({ id, imgPath, name, shortDescription, price }) => {
+const BundleItem = ({ id, imgPath, name, shortDescription, price, items }) => {
     return (
         <div className="card border-light mb-3">
             <div className="card-header">{ id }</div>
@@ -10,6 +10,8 @@ const BundleItem = ({ id, imgPath, name, shortDescription, price }) => {
                     <img src={imgPath} alt="bundle" height="200" width="200"/>
                     <p>{ shortDescription }</p>
                     <p>{ price }</p>
+                    <br/>
+                    <p>{ items }</p>
                 </div>
             </div>
         </div>
